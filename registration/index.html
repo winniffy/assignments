@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zuri registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form--container">
+            <form action="./success.html">
+                <h1 class="form--heading">Register your new account</h1>
+                <label for="fname">First name</label><br>
+                <input type="text" required name="fname" id="fname" placeholder="Winner"><br><br>
+                <label for="lname">Last name</label><br>
+                <input type="text" required name="lname" id="lname" placeholder="Umeh"><br><br>
+                <label for="tel">Phone</label><br>
+                <input type="tel" minlength="11" required name="tel" id="tel" placeholder="08101273605"><br><br>
+                <label for="fname">Email</label><br>
+                <input type="email" required name="email" id="email" placeholder="winniffy@gmail.com"><br><br>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" ><br><br>
+                <label for="color">Select your Favorite Color</label>
+                <input type="color" name="dob" id="color" value="#000" ><br><br>
+
+                <button id="register" type="submit"> <a href="./success.html">Register</a></button>
+
+                <p><a id="login" href="./login.html">Already have an account? Log in</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
