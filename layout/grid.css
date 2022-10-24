@@ -1,0 +1,78 @@
+*, *::after, *::before {box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {margin: 0; background-color: rgb(3, 0, 43); font-size: 15px; font-family: 'Lexend Deca', sans-serif;}
+
+main {
+    width: 85%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: .85em;
+    margin: 1em auto;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'a a a b'
+    'c c d d'
+    'c c e e'
+    ;
+    gap: 1em;
+    margin: 3em auto;
+    width: 70%;
+}
+
+.grid-1 {
+    background-color: rgb(255, 68, 0);
+    padding: 8em;
+    grid-area: a;
+}
+.grid-2 {
+    background-color: rgb(243, 171, 17);
+    padding: 4em;
+    grid-area: b;
+}
+.grid-3 {
+    background-color: rgb(18, 143, 18);
+    padding: 4em;
+    grid-area: c;
+}
+.grid-4 {
+    background-color: rgb(6, 134, 225);
+    padding: 4em;
+    grid-area: d;
+}
+.grid-5 {
+    background-color: rgb(6, 134, 225);
+    padding: 4em;
+    grid-area: e;
+}
+
+@media screen and (max-width: 375px) {
+    .grid-1 {
+        padding: 4em;
+    }
+    .grid {
+        width: 95%;
+        grid-template-areas:
+        'a a'
+        'b b'
+        'c c'
+        'd e'       
+        ;
+    }
+}
